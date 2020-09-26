@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "classmap": ["./"]
+    },
+  "require": {
+    "ext-pdo": "*"
+  }
+}
