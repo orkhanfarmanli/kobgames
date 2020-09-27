@@ -1,7 +1,17 @@
 <?php
 
+namespace App\Core\Database;
+
+use PDO;
+use PDOException;
+
 class Connection
 {
+    /**
+     * Make PDO connection
+     * @param $config
+     * @return PDO
+     */
     public static function make($config)
     {
         try {
@@ -15,6 +25,5 @@ class Connection
         } catch (PDOException $e) {
             die($e->getMessage());
         }
-
     }
 }

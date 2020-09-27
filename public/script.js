@@ -3,7 +3,7 @@ $('.game').on('click', function () {
     const gameId = $(this).data('id');
 
     $.ajax({
-        url: '/games',
+        url: '/feedbacks',
         method: 'GET',
         dataType: 'JSON',
         data: {

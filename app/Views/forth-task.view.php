@@ -11,7 +11,7 @@
         </thead>
         <tbody>
             <tr>
-                <td>ID</td>
+                <td>Id</td>
                 <td>integer, primary key, an auto incremented id of a feedback</td>
             </tr>
             <tr>
