@@ -14,6 +14,12 @@ try {
     throw $e;
 }
 
+
+/**
+ * Check route global function
+ * @param $route
+ * @return bool
+ */
 function routeIs($route){
     return $route == $_SERVER['REQUEST_URI'];
 }
