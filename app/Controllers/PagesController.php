@@ -6,15 +6,15 @@ use App\Core\App;
 
 class PagesController
 {
-     /**
+    /**
      * Home page
      */
     public function home()
     {
-    return view('index');
+        return view('index');
     }
 
-     /**
+    /**
      * Second task page
      */
     public function secondTask()
@@ -31,7 +31,7 @@ class PagesController
         return view('second-task', ['games' => $games]);
     }
 
-     /**
+    /**
      * Forth task page
      */
     public function forthTask()

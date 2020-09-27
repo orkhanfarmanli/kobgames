@@ -2,7 +2,7 @@
 
 <div class="container">
     <h3 class="text-center">Games</h3>
-    <span>Data is sorted by player count of the game version. This will help viewer to get a better understanding of the current situation</span>
+    <p class="mb-3">Data is sorted by player count of the game version. This will help viewer to get a better understanding of the current situation</p>
     <table class="table">
         <thead>
         <tr>
