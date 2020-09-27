@@ -1,12 +1,12 @@
 <?php
 
-
 namespace App\Controllers;
 
 
 use App\Core\App;
+use App\Core\Controller;
 
-class AjaxController
+class AjaxController extends Controller
 {
      /**
      * Get game feedbacks by game id
@@ -26,7 +26,8 @@ class AjaxController
             FROM feedback f
             LEFT JOIN gamePlayer p ON p.id = f.gamePlayerId
             LEFT JOIN game g ON g.id = f.gameId 
-            WHERE gameId = :gameId;', ['gameId' => $game_id]);
+            WHERE gameId = :gameId
+            ORDER BY created_at DESC;', ['gameId' => $game_id]);
 
         echo json_encode($games);
     }

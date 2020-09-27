@@ -3,15 +3,16 @@
 namespace App\Controllers;
 
 use App\Core\App;
+use App\Core\Controller;
 
-class PagesController
+class PagesController extends Controller
 {
     /**
      * Home page
      */
     public function home()
     {
-        return view('index');
+        return $this->view('index');
     }
 
     /**
@@ -28,7 +29,7 @@ class PagesController
                 GROUP BY gameSession.gameid, gameSession."version"
                 ORDER BY playerCount DESC;');
 
-        return view('second-task', ['games' => $games]);
+        return $this->view('php-and-postgresql/second-task', ['games' => $games]);
     }
 
     /**
@@ -36,7 +37,7 @@ class PagesController
      */
     public function forthTask()
     {
-        return view('forth-task');
+        return $this->view('php-and-postgresql/forth-task');
     }
 
     /**
@@ -50,6 +51,6 @@ class PagesController
                 FROM game g WHERE id in (SELECT gameId FROM feedback f)
                 ORDER BY feedback_count DESC;');
 
-        return view('fifth-task', ['feedbacked_games' => $feedbacked_games]);
+        return $this->view('php-and-postgresql/fifth-task', ['feedbacked_games' => $feedbacked_games]);
     }
 }

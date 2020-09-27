@@ -14,22 +14,8 @@ try {
     throw $e;
 }
 
-/**
- * Global view function
- * @param $view
- * @param array $data
- */
-function view($view, $data = []){
-    extract($data);
-
-    require "app/Views/$view.view.php";
+function routeIs($route){
+    return $route == $_SERVER['REQUEST_URI'];
 }
 
-/**
- * Global redirect
- * @param $location
- */
-function redirect($location)
-{
-     header("Location:/{$location}");
-}
+
