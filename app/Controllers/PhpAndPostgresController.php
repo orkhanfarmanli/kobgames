@@ -5,16 +5,8 @@ namespace App\Controllers;
 use App\Core\App;
 use App\Core\Controller;
 
-class PagesController extends Controller
+class PhpAndPostgresController extends Controller
 {
-    /**
-     * Home page
-     */
-    public function home()
-    {
-        return $this->view('index');
-    }
-
     /**
      * Second task page
      */
@@ -52,5 +44,21 @@ class PagesController extends Controller
                 ORDER BY feedback_count DESC;');
 
         return $this->view('php-and-postgresql/fifth-task', ['feedbacked_games' => $feedbacked_games]);
+    }
+
+    /**
+     * Sixth task page
+     */
+    public function sixthTask()
+    {
+        return $this->view('php-and-postgresql/sixth-task');
+    }
+
+    /**
+     * Seventh task page
+     */
+    public function seventhTask()
+    {
+        return $this->view('php-and-postgresql/seventh-task');
     }
 }
