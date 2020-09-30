@@ -1,7 +1,7 @@
 <?php require VIEW_PATH . 'partials/header.php'; ?>
 
 <div class="container">
-    <h2 class="text-center mt-5">API</h2>
+    <h3 class="text-center mt-5">Task #7 | API</h3>
 
     <p>
         Send <b>POST</b> request to

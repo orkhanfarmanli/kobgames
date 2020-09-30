@@ -4,11 +4,18 @@
 $router->get('', 'HomeController@index');
 
 // PHP and Postgres task pages
-$router->get('php-and-postgres/second-task', 'PhpAndPostgresController@secondTask');
-$router->get('php-and-postgres/forth-task', 'PhpAndPostgresController@forthTask');
-$router->get('php-and-postgres/fifth-task', 'PhpAndPostgresController@fifthTask');
-$router->get('php-and-postgres/sixth-task', 'PhpAndPostgresController@sixthTask');
-$router->get('php-and-postgres/seventh-task', 'PhpAndPostgresController@seventhTask');
+$router->get('php-and-postgresql/second-task', 'PhpAndPostgresController@secondTask');
+$router->get('php-and-postgresql/forth-task', 'PhpAndPostgresController@forthTask');
+$router->get('php-and-postgresql/fifth-task', 'PhpAndPostgresController@fifthTask');
+$router->get('php-and-postgresql/sixth-task', 'PhpAndPostgresController@sixthTask');
+$router->get('php-and-postgresql/seventh-task', 'PhpAndPostgresController@seventhTask');
+
+// Servers
+$router->get('servers/first-and-second-task', 'ServersController@firstTask');
+
+// Competence
+$router->get('competence/first-task', 'CompetenceController@firstTask');
+
 
 // Ajax routes
 $router->get('feedbacks', 'AjaxController@feedbacks');

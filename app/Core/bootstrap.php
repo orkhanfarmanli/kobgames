@@ -20,8 +20,8 @@ try {
  * @param $route
  * @return bool
  */
-function routeIs($route){
-    return $route == $_SERVER['REQUEST_URI'];
+function routeIsActive($route){
+    return strpos($_SERVER['REQUEST_URI'], $route) !== false  ? 'active' : '';
 }
 
 
