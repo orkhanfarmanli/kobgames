@@ -19,12 +19,12 @@ abstract class BaseApi
     /**
      * Response
      * @param $code
-     * @param $message
+     * @param $data
      */
-    public function response($code, $message)
+    public function response($code, $data)
     {
         http_response_code($code);
-        echo $message;
+        echo json_encode($data);
 
         exit();
     }

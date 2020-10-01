@@ -1,3 +1,7 @@
 body{
   background: lightgray;
 }
+
+.game-box-body{
+  min-height: 74px !important;
+}

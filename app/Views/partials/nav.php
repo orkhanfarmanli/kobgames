@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle <?= routeIsActive('php-and-postgresql') ?>" id="php-and-postgresql-dropdown" data-toggle="dropdown"
+                <a href="#" class="nav-link dropdown-toggle <?= \App\Helpers\Helper::routeIsActive('php-and-postgresql') ?>" id="php-and-postgresql-dropdown" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     PHP & Postgresql
                 </a>
@@ -30,7 +30,7 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle <?= routeIsActive('servers') ?>" id="servers" data-toggle="dropdown"
+                <a href="#" class="nav-link dropdown-toggle <?= \App\Helpers\Helper::routeIsActive('servers') ?>" id="servers" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Servers
                 </a>
@@ -41,13 +41,13 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle <?= routeIsActive('competence') ?>" id="competence" data-toggle="dropdown"
+                <a href="#" class="nav-link dropdown-toggle <?= \App\Helpers\Helper::routeIsActive('competence') ?>" id="competence" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Competence
                 </a>
                 <div class="dropdown-menu" aria-labelledby="competence">
-                    <a class="dropdown-item" href="/competence/first-task">
-                        Task #1
+                    <a class="dropdown-item" href="/competence/first-and-second-task">
+                        Task #1 & Task #2
                     </a>
                 </div>
             </li>

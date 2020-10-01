@@ -15,13 +15,3 @@ try {
 }
 
 
-/**
- * Check route global function
- * @param $route
- * @return bool
- */
-function routeIsActive($route){
-    return strpos($_SERVER['REQUEST_URI'], $route) !== false  ? 'active' : '';
-}
-
-

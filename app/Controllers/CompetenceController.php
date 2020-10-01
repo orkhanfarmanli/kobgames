@@ -11,8 +11,8 @@ class CompetenceController extends Controller
     /**
      * First task
      */
-    public function firstTask()
+    public function firstAndSecondTask()
     {
-        return $this->view('competence/first-task');
+        return $this->view('competence/first-and-second-task');
     }
 }

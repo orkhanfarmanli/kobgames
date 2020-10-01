@@ -9,6 +9,7 @@
   },
   "require": {
     "ext-pdo": "*",
-    "ext-json": "*"
+    "ext-json": "*",
+    "fabpot/goutte": "^4.0"
   }
 }

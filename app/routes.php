@@ -14,11 +14,12 @@ $router->get('php-and-postgresql/seventh-task', 'PhpAndPostgresController@sevent
 $router->get('servers/first-and-second-task', 'ServersController@firstTask');
 
 // Competence
-$router->get('competence/first-task', 'CompetenceController@firstTask');
-
+$router->get('competence/first-and-second-task', 'CompetenceController@firstAndSecondTask');
 
 // Ajax routes
 $router->get('feedbacks', 'AjaxController@feedbacks');
+$router->get('games', 'AjaxController@games');
+$router->get('game-details', 'AjaxController@gameDetails');
 
 // Api routes
 $router->post('api/store-feedback', 'ApiController@storeFeedback');
