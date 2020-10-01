@@ -7,14 +7,13 @@ namespace App\Helpers;
 class Helper
 {
     /**
-     * Top 50 common words in English language.
-     * source: https://en.wikipedia.org/wiki/Most_common_words_in_English
+     * Common words to exclude.
      */
     private static $common_words = [
         'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'I', 'it', 'for', 'not', 'on', 'with', 'he', 'as',
         'you', 'do', 'at', 'this', 'but', 's', 'his', 'by', 'from', 'they', 'we', 'say', 'her', 'she', 'or', 'an', 'will',
         'my', 'one', 'all', 'would', 'new', 'com', 'there', 'their', 'what', 'so', 'up', 'out', 'if', 'about', 'who',
-        'get', 'which', 'go', 'me,', 'http'
+        'get', 'which', 'go', 'me,', 'http', '-', 'www', 'is', 'also', 'than', 'your', 'are'
     ];
 
 
